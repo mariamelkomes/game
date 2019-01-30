@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery-3.3.1.min.js"></script>
+    <style>
+        img {
+            width: 50%;
+            height: 50%;
+            opacity: 0.6;
+        }
+
+        center>div {
+            font-size: 28px;
+        }
+    </style>
+    <script>
+        $(function () {
+            $("#img1").hover(function () {
+                $(this).animate({
+                    width: "100%",
+                    height: "auto",
+                    opacity: 3,
+                }, function () {
+                    $("#asfour").html("<b>  عصفور / Bird </b>");
+                });
+            });
+            $("#img1").mouseout(function () {
+                $("#img1").animate({
+                    width: "50%",
+                    opacity: 0.6,
+                    height: "50%"
+                }, function () {
+                    $("#asfour").html(" ");
+                });
+            });
+            $("#img3").hover(function () {
+                $("#img3").animate({
+                    width: "100%",
+                    height: "auto",
+                    opacity: 3,
+                }, function () {
+                    $("#katkot").html("<b>  كتكوت / chick </b>");
+                });
+            });
+            $("#img3").mouseout(function () {
+                $("#img3").animate({
+                    width: "50%",
+                    opacity: 0.6,
+                    height: "50%"
+                }, function () {
+                    $("#katkot").html(" ");
+                });
+            });
+            $("#img6").hover(function () {
+                $(this).animate({
+                    width: "100%",
+                    height: "auto",
+                    opacity: 3,
+                }, function () {
+                    $("#crow").html("<b> غراب / Crow </b>");
+                });
+            });
+            $("#img6").mouseout(function () {
+                $(this).animate({
+                    width: "50%",
+                    opacity: 0.6,
+                    height: "50%"
+                }, function () {
+                    $("#crow").html(" ");
+                });
+            });
+            $("#img7").hover(function () {
+                $(this).animate({
+                    width: "100%",
+                    height: "auto",
+                    opacity: 3,
+                }, function () {
+                    $("#falcon").html("<b> صقر / Falcon </b>");
+                });
+            });
+            $("#img7").mouseout(function () {
+                $(this).animate({
+                    width: "50%",
+                    opacity: 0.6,
+                    height: "50%"
+                }, function () {
+                    $("#falcon").html(" ");
+                });
+            });
+            $("#img8").hover(function () {
+                $(this).animate({
+                    width: "100%",
+                    height: "auto",
+                    opacity: 3,
+                }, function () {
+                    $("#hoopoe").html("<b> هدهد / Hoopoe </b>");
+                });
+            });
+            $("#img8").mouseout(function () {
+                $(this).animate({
+                    width: "50%",
+                    opacity: 0.6,
+                    height: "50%"
+                }, function () {
+                    $("#hoopoe").html(" ");
+                });
+            });
+            $("#img9").hover(function () {
+                $(this).animate({
+                    width: "100%",
+                    height: "auto",
+                    opacity: 3,
+                }, function () {
+                    $("#pigeon").html("<b> حمامة / Pigeon </b>");
+                });
+            });
+            $("#img9").mouseout(function () {
+                $(this).animate({
+                    width: "50%",
+                    opacity: 0.6,
+                    height: "50%"
+                }, function () {
+                    $("#pigeon").html(" ");
+                });
+            });
+            $("#img10").hover(function () {
+                $(this).animate({
+                    width: "100%",
+                    height: "auto",
+                    opacity: 3,
+                }, function () {
+                    $("#ostrich").html("<b> نعامة / Ostrich </b>");
+                });
+            });
+            $("#img10").mouseout(function () {
+                $(this).animate({
+                    width: "50%",
+                    opacity: 0.6,
+                    height: "50%"
+                }, function () {
+                    $("#ostrich").html(" ");
+                });
+            });
+        });
+
+        function mousclc(ev) {
+            ev.style = "width:100% ; height:65% ; opacity:3";
+            document.getElementById("checken").innerHTML = "<b>دجاجة / Cheken</b>";
+        }
+
+        function mousout(ev) {
+            ev.style = "width:50% ; height:50% ; opacity:0.6";
+            document.getElementById("checken").innerHTML = " ";
+        }
+
+        function moushover(ev) {
+            ev.style = "width:100% ; height:50% ; opacity:3";
+            document.getElementById("duck").innerHTML = "<b>بطة / Duck</b>";
+        }
+
+        function mousoutduck(ev) {
+            ev.style = "width:50% ; height:50% ; opacity:0.6";
+            document.getElementById("duck").innerHTML = " ";
+        }
+
+        function hover() {
+            document.getElementById("img4").style = "width:100% ; height:50% ; opacity:3";
+            document.getElementById("img4").style.transform = "rotate(360deg)";
+            document.getElementById("papan").innerHTML = "<b>بغبغان / Baghban</b>";
+
+        }
+
+        function out() {
+            document.getElementById("img4").style = "width:50% ; height:50% ; opacity:0.6";
+            document.getElementById("img4").style.transform = "rotate(180deg)";
+            document.getElementById("papan").innerHTML = " ";
+
+        }
+    </script>
+</head>
+
+<body style="background-color: rgb(216, 216, 216);">
+    <br><br>
+    <center>
+        <div style="width: 100%;height: 40%; display: flex;flex-wrap: nowrap;">
+            <div style="width: 20%">
+                <img id="img1" src="images\asfour.JPG"><br><br>
+                <center>
+                    <div id="asfour"> </div>
+                </center>
+            </div>
+            <div style="width: 20%">
+                <img id="img2" src="images\checken.JPG" onmouseover="mousclc(this)" onmouseout=" mousout(this)"><br><br>
+                <center>
+                    <div id="checken"> </div>
+                </center>
+            </div>
+            <div style="width: 20%;">
+                <img id="img3" src="images\katkot.JPG"><br><br>
+                <center>
+                    <div id="katkot"> </div>
+                </center>
+            </div>
+            <div style="width: 20%;">
+                <img id="img4" src="images\papan.JPG" onmouseover="hover()" onmouseout="out()"><br><br>
+                <center>
+                    <div id="papan"> </div>
+                </center>
+            </div>
+            <div style="width: 20%;">
+                <img id="img5" src="images\duck.JPEG" onmouseover="moushover(this)" onmouseout="mousoutduck(this)"><br><br>
+                <center>
+                    <div id="duck"> </div>
+                </center>
+            </div>
+
+        </div>
+        <br><br>
+        <div style="width: 100%;height: 40%; display: flex;flex-wrap: nowrap;">
+            <div style="width: 20%">
+                <img id="img6" src="images\Crow.JPG"><br><br>
+                <center>
+                    <div id="crow"> </div>
+                </center>
+            </div>
+            <div style="width: 20%">
+                <img id="img7" src="images\Falcon.JPG"><br><br>
+                <center>
+                    <div id="falcon"> </div>
+                </center>
+            </div>
+            <div style="width: 20%;">
+                <img id="img8" src="images\Hoopoe.JPG"><br><br>
+                <center>
+                    <div id="hoopoe"> </div>
+                </center>
+            </div>
+            <div style="width: 20%;">
+                <img id="img9" src="images\Pigeon.JPG"><br><br>
+                <center>
+                    <div id="pigeon"> </div>
+                </center>
+            </div>
+            <div style="width: 20%;">
+                <img id="img10" src="images\Ostrich.JPG"><br><br>
+                <center>
+                    <div id="ostrich"> </div>
+                </center>
+            </div>
+
+        </div>
+    </center>
+
+
+</body>
+
+</html>

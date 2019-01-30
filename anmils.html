@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        game
+    </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" media="(max-width:600px)" href="style2.css">
+    <style>
+        body {
+           
+            background: rgb(209, 204, 204);
+        }
+        .w {
+            border:2px solid blue;
+            height:50px;
+            font-size:1.28em;
+            width: 15%;
+            margin-left: 35%;
+            text-align: center;  
+        }
+        </style>
+    <script src="jquery-1.11.3.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('input').blur(function () {
+                if (this.getAttribute('name') == "rabbit") {
+                    if (this.value == "rabbit" || this.value == "ارنب") {
+                        $("#writer").html(this.value);
+                        this.value = "";
+                    }
+                    else {
+                        $("#writer").html(" Try agin , Enter correct name");
+                        $("#txt").val("");
+                    }
+                }
+                else if (this.getAttribute('name') == "cat") {
+                    if (this.value == "cat" || this.value == "قطة") {
+                        $("#writer").html(this.value);
+                        this.value = "";
+                    }
+                    else {
+                        $("#writer").html(" Try agin , Enter correct name");
+                        $("#txt").val("");
+                    }
+                }
+                else if(this.getAttribute('name') == "donkey")
+                {
+                    if (this.value == "donkey" || this.value == "حمار") {
+                        $("#writer").html(this.value);
+                        this.value = "";
+                    }
+                    else {
+                        $("#writer").html(" Try agin , Enter correct name");
+                        $("#txt").val("");
+                    }
+
+                }
+                else if(this.getAttribute('name') == "dog")
+                {
+                    if (this.value == "dog" || this.value == "كلب") {
+                        $("#writer").html(this.value);
+                        this.value = "";
+                    }
+                    else {
+                        $("#writer").html(" Try agin , Enter correct name");
+                        $("#txt").val("");
+                    }
+
+                }
+                else if(this.getAttribute('name') == "camel")
+                {
+                    if (this.value == "camel" || this.value == "جمل") {
+                        $("#writer").html(this.value);
+                        this.value = "";
+                    }
+                    else {
+                        $("#writer").html(" Try agin , Enter correct name");
+                        $("#txt").val("");
+                    }
+
+                }
+                else if(this.getAttribute('name') == "elephant")
+                {
+                    if (this.value == "elephant" || this.value == "فيل") {
+                        $("#writer").html(this.value);
+                        this.value = "";
+                    }
+                    else {
+                        $("#writer").html(" Try agin , Enter correct name");
+                        $("#txt").val("");
+                    }
+
+                }
+                else if(this.getAttribute('name') == "horse")
+                {
+                    if (this.value == "horse" || this.value == "حصان") {
+                        $("#writer").html(this.value);
+                        this.value = "";
+                    }
+                    else {
+                        $("#writer").html(" Try agin , Enter correct name");
+                        $("#txt").val("");
+                    }
+
+                }
+                else if(this.getAttribute('name') == "cow")
+                {
+                    if (this.value == "cow" || this.value == "بقره") {
+                        $("#writer").html(this.value);
+                        this.value = "";
+                    }
+                    else {
+                        $("#writer").html(" Try agin , Enter correct name");
+                        $("#txt").val("");
+                    }
+
+                }
+                else if(this.getAttribute('name') == "deer")
+                {
+                    if (this.value == "deer" || this.value == "غزاله") {
+                        $("#writer").html(this.value);
+                        this.value = "";
+                    }
+                    else {
+                        $("#writer").html(" Try agin , Enter correct name");
+                        $("#txt").val("");
+                    }
+
+                }
+                else if(this.getAttribute('name') == "ostrich")
+                {
+                    if (this.value == "ostrich" || this.value == "نعامه") {
+                        $("#writer").html(this.value);
+                        this.value = "";
+                    }
+                    else {
+                        $("#writer").html(" Try agin , Enter correct name");
+                        $("#txt").val("");
+                    }
+
+                }
+                else if (this.getAttribute('name') == "tiger")
+                {
+                    if (this.value == "tiger" || this.value == "نمر") {
+                        $("#writer").html(this.value);
+                        this.value = "";
+                    }
+                    else {
+                        $("#writer").html(" Try agin , Enter correct name");
+                        $("#txt").val("");
+                    }
+
+                }
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div style="display :flex " class="div">
+        <div style="width:25%;height: 150px" class="div1"> <input type="text" id="txt" name="rabbit" placeholder="enter your name"><br>
+            <img src="image/images.jpeg" style=" width: 100%;height: 100%">
+        </div>
+
+        <div style="margin-left:5%;width:25%;height: 150px" clss="div2">
+            <input type="text" id="txt" name="cat" placeholder="enter your name" style=" margin-left: 5%"><br>
+            <img src="image/3dlat.net_10_17_6481_f839e2db23f010.jpg" id="img" style=" width: 100%;height: 100%">
+
+        </div>
+        <div style="margin-left:5%;width:25%;height: 150px" class="div3">
+            <input type="text" id="txt" name="donkey" placeholder="enter your name" style=" margin-left: 5%"><br>
+            <img src="image/images (7).jpg" style=" width: 100%;height: 100%">
+
+        </div>
+        <div style="margin-left:5%;width:25%;height: 150px" class="div4">
+            <input type="text" id="txt" name="horse" placeholder="enter your name" style=" margin-left: 5%"><br>
+            <img src="image/images.jpg" style=" width: 100%; height: 100%">
+
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <div style="display:flex" class="div">
+        <div style="width:25%;height: 150px" class="div1">
+            <input type="text" id="txt" name="dog" placeholder="enter your name"><br>
+            <img src="image/3dlat.net_10_17_7817_ebe04eb1e44f3.jpg" style=" width: 100%; height: 100%">
+
+        </div>
+        <div style="width:25%;height: 150px;margin-left: 5%" class="div2">
+            <input type="text" id="txt" name="camel" placeholder="enter your name"><br>
+            <img src="image/images (1).jpg" style="width:100%;height: 150px;">
+
+        </div>
+        <div style="width:25%;height: 150px;margin-left: 5%" class="div3">
+            <input type="text" id="txt" name="elephant" placeholder="enter your name"> <br>
+            <img src="image/images (13).jpg" style="width:100%;height: 150px;">
+
+        </div>
+        <div style="width:25%;height: 150px;margin-left: 5%" class="div4">
+            <input type="text" id="txt" name="cow" placeholder="enter your name"><br>
+            <img src="image/images (17).jpg" style="width:100%;height: 150px;">
+
+        </div>
+
+
+    </div>
+    <br><br>
+    <div style="display:flex" class="div">
+        <div style="width:25%;height: 150px;" class="div1">
+            <input type="text" id="txt" name="giraffe" placeholder="enter your name"><br>
+            <img src="image/images (15).jpg" style="width:100%;height: 150px;">
+
+        </div>
+        <div style="width:25%;height: 150px;margin-left: 5%" class="div1">
+            <input type="text" id="txt" name="deer" placeholder="enter your name"><br>
+            <img src="image/images (10).jpg" style="width:100%;height: 150px;">
+
+        </div>
+        <div style="width:25%;height: 150px;margin-left: 5%" class="div2">
+            <input type="text" id="txt" name="ostrich" placeholder="enter your name"><br>
+            <img src="image/images (9).jpg" style="width:100%;height: 150px;">
+
+
+        </div>
+        <div style="width:25%;height: 150px;margin-left: 5%" class="div3">
+            <input type="text" id="txt" name="tiger" placeholder="enter your name"><br>
+            <img src="image/images (3).jpg" style="width:100%;height: 150px;">
+
+        </div>
+    </div><br><br>
+
+
+    <div id="writer" class="w">
+
+    </div>
+
+</body>
+
+</html>
